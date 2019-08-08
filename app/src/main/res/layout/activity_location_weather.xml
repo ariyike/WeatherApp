@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NAME: ANJOLAOLUWA ARIYIKE ADETIMEHIN-->
+<!--STUDENT NO.: S1719003-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/currentAtm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LocationWeather">
+
+    <ImageView
+        android:id="@+id/speedImg"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/weatherConImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/directionImg"
+        app:layout_constraintTop_toBottomOf="@+id/uvImg"
+        app:srcCompat="@drawable/breeze" />
+
+    <ImageView
+        android:id="@+id/directionImg"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="96dp"
+        android:contentDescription="@string/weatherConImg"
+        app:layout_constraintStart_toEndOf="@+id/visibilityImg"
+        app:layout_constraintTop_toBottomOf="@+id/humidityImg"
+        app:srcCompat="@drawable/weathercock" />
+
+    <ImageView
+        android:id="@+id/visibilityImg"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="96dp"
+        android:contentDescription="@string/weatherConImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pressureImg"
+        app:srcCompat="@drawable/sea_waves" />
+
+    <ImageView
+        android:id="@+id/uvImg"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/weatherConImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/humidityImg"
+        app:layout_constraintTop_toBottomOf="@+id/currentDate"
+        app:srcCompat="@drawable/filter_uv" />
+
+    <ImageView
+        android:id="@+id/humidityImg"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/weatherConImg"
+        app:layout_constraintStart_toEndOf="@+id/pressureImg"
+        app:layout_constraintTop_toBottomOf="@+id/currentDate"
+        app:srcCompat="@drawable/humidity" />
+
+    <ImageView
+        android:id="@+id/pressureImg"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/weatherConImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentDate"
+        app:srcCompat="@drawable/gauge" />
+
+    <TextView
+        android:id="@+id/currentDate"
+        android:layout_width="335dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentTemp" />
+
+    <TextView
+        android:id="@+id/currentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/curTemp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/appGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="407dp"
+        android:layout_height="265dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#F1C9B9"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/locPgTwoIcon"
+                android:layout_width="24dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/weatherImgDesc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bangladesh" />
+
+            <TextView
+                android:id="@+id/locPgTwo"
+                android:layout_width="103dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/appGrey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/currentDayAfter"
+                android:layout_width="110dp"
+                android:layout_height="166dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="28dp"
+                android:background="#ffffff"
+                app:cardCornerRadius="25dp"
+                app:layout_constraintStart_toEndOf="@+id/currentTomorrow"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/nextWeatherImg"
+                    android:layout_width="84dp"
+                    android:layout_height="134dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:contentDescription="@string/weatherImgDescPageTwo"
+                    android:contextClickable="true"
+                    android:focusable="true" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/currentTomorrow"
+                android:layout_width="110dp"
+                android:layout_height="166dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:background="#ffffff"
+                app:cardCornerRadius="25dp"
+                app:layout_constraintStart_toEndOf="@+id/currentToday"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/tomorrowWeatherImg"
+                    android:layout_width="84dp"
+                    android:layout_height="134dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:contentDescription="@string/weatherImgDescPageTwo"
+                    android:contextClickable="true"
+                    android:focusable="true" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/currentToday"
+                android:layout_width="110dp"
+                android:layout_height="166dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:background="#ffffff"
+                app:cardCornerRadius="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/todayWeatherImg"
+                    android:layout_width="84dp"
+                    android:layout_height="134dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:contentDescription="@string/weatherImgDescPageTwo"
+                    android:contextClickable="true"
+                    android:focusable="true" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/placeholderText"
+                android:textColor="@color/appGrey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/currentToday" />
+
+            <TextView
+                android:id="@+id/tomorrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/placeholderText"
+                android:textColor="@color/appGrey"
+                app:layout_constraintStart_toEndOf="@+id/today"
+                app:layout_constraintTop_toBottomOf="@+id/currentTomorrow" />
+
+            <TextView
+                android:id="@+id/dayAfter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/placeholderText"
+                android:textColor="@color/appGrey"
+                app:layout_constraintStart_toEndOf="@+id/tomorrow"
+                app:layout_constraintTop_toBottomOf="@+id/currentDayAfter" />
+
+            <TextView
+                android:id="@+id/nextWeatherCond"
+                android:layout_width="95dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/placeholderText"
+                android:textColor="@color/appGrey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tomorrowWeatherCond"
+                android:layout_width="95dp"
+                android:layout_height="19dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/placeholderText"
+                android:textColor="@color/appGrey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/nextWeatherCond" />
+
+            <TextView
+                android:id="@+id/todayWeatherCond"
+                android:layout_width="108dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/placeholderText"
+                android:textColor="@color/appGrey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pressureCond"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/placeholderText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/appGrey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pressureImg" />
+
+    <TextView
+        android:id="@+id/pressureCondLabel"
+        android:layout_width="69dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/pressure"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/appGrey"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pressureCond" />
+
+    <TextView
+        android:id="@+id/humidityCond"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/placeholderText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/appGrey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/pressureCond"
+        app:layout_constraintTop_toBottomOf="@+id/humidityImg" />
+
+    <TextView
+        android:id="@+id/humidityCondLabel"
+        android:layout_width="69dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/humidity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/appGrey"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/pressureCondLabel"
+        app:layout_constraintTop_toBottomOf="@+id/humidityCond" />
+
+    <TextView
+        android:id="@+id/uvCond"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/placeholderText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/appGrey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/humidityCond"
+        app:layout_constraintTop_toBottomOf="@+id/uvImg" />
+
+    <TextView
+        android:id="@+id/uvCondLabel"
+        android:layout_width="69dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/uvRisk"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/appGrey"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/humidityCondLabel"
+        app:layout_constraintTop_toBottomOf="@+id/uvCond" />
+
+    <TextView
+        android:id="@+id/visibilityCond"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center_horizontal"
+        android:text="@string/placeholderText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/appGrey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visibilityImg" />
+
+    <TextView
+        android:id="@+id/visibilityCondLabel"
+        android:layout_width="69dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/visibility"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/appGrey"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visibilityCond" />
+
+    <TextView
+        android:id="@+id/directionCond"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="60dp"
+        android:gravity="center_horizontal"
+        android:text="@string/placeholderText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/appGrey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/visibilityCond"
+        app:layout_constraintTop_toBottomOf="@+id/directionImg" />
+
+    <TextView
+        android:id="@+id/directionCondLabel"
+        android:layout_width="75dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/windDirection"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/appGrey"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/visibilityCondLabel"
+        app:layout_constraintTop_toBottomOf="@+id/directionCond" />
+
+    <TextView
+        android:id="@+id/speedCond"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="64dp"
+        android:gravity="center_horizontal"
+        android:text="@string/placeholderText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/appGrey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/directionCond"
+        app:layout_constraintTop_toBottomOf="@+id/speedImg" />
+
+    <TextView
+        android:id="@+id/speedCondLabel"
+        android:layout_width="69dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/windSpeed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/appGrey"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/directionCondLabel"
+        app:layout_constraintTop_toBottomOf="@+id/speedCond" />
+
+    <TextView
+        android:id="@+id/matricNo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/studentNo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

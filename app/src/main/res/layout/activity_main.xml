@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NAME: ANJOLAOLUWA ARIYIKE ADETIMEHIN-->
+<!--STUDENT NO.: S1719003-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appPeach"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="org.me.gcu.weatherapp.activities.MainActivity">
+
+    <TextView
+        android:id="@+id/homeTodayDate"
+        android:layout_width="229dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/appGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeWeatherPng"
+        android:layout_width="159dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/weatherImgDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTodayDate"
+        app:srcCompat="@drawable/storm" />
+
+    <TextView
+        android:id="@+id/homeTodayTemp"
+        android:layout_width="309dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/curTemp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/appGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeWeatherPng" />
+
+    <TextView
+        android:id="@+id/homeLocation"
+        android:layout_width="255dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/bangladeshLoc"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/appGrey"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTodayTemp" />
+
+    <TextView
+        android:id="@+id/homeCondition"
+        android:layout_width="312dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/seeMore"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/appGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeLocation" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/locSelect"
+        android:layout_width="406dp"
+        android:layout_height="241dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeCondition" />
+
+    <TextView
+        android:id="@+id/viewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:text="@string/viewDetails"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/appGrey"
+        android:textColorHighlight="#FFD700"
+        android:textColorHint="#FFD700"
+        android:textColorLink="#FFD700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locSelect" />
+
+    <TextView
+        android:id="@+id/matricNo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/studentNo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

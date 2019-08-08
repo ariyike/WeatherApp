@@ -1,0 +1,57 @@
+<!--NAME: ANJOLAOLUWA ARIYIKE ADETIMEHIN-->
+<!--STUDENT NO.: S1719003-->
+
+<resources>
+    <string name="app_name">Weather App</string>
+
+    <!--LOCATION NAME STRINGS-->
+    <string name="bangladeshLoc">Bangladesh</string>
+    <string name="glasgowLoc">Glasgow</string>
+    <string name="lagosLoc">Lagos</string>
+    <string name="londonLoc">London</string>
+    <string name="mauritiusLoc">Mauritius</string>
+    <string name="newYorkLoc">New York</string>
+    <string name="omanLoc">Oman</string>
+
+    <!--LOCATION IMAGE NAMES-->
+    <string name="bangladeshImg">bangladesh</string>
+    <string name="glasgowImg">glasgow</string>
+    <string name="lagosImg">lagos</string>
+    <string name="londonImg">london</string>
+    <string name="mauritiusImg">mauritius</string>
+    <string name="newYorkImg">new_york</string>
+    <string name="omanImg">oman</string>
+
+    <!--LOCATION URL CODES-->
+    <string name="bangladeshCode">1185241</string>
+    <string name="glasgowCode">2648579</string>
+    <string name="lagosCode">2332459</string>
+    <string name="londonCode">2643743</string>
+    <string name="mauritiusCode">934154</string>
+    <string name="newYorkCode">5128581</string>
+    <string name="omanCode">287286</string>
+
+    <!--TEXT VIEW STRINGS-->
+    <string name="curTemp">30°C</string>
+    <string name="curDate">07 July 2019</string>
+    <string name="seeMore">see more</string>
+    <string name="viewDetails">view weather details</string>
+
+    <!--MISCELLANEOUS STRINGS-->
+    <string name="weatherImgDesc"> weather image for current location</string>
+    <string name="weatherConImg">weather condition details</string>
+    <string name="placeholderText">text here</string>
+    <string name="weatherImgDescPageTwo">weather image for page two</string>
+    <string name="studentNo">Matric No: S1719003</string>
+    <string name="refresh">refresh</string>
+    <string name="setRefresh">set refresh time</string>
+
+    <!--LABELS FOR WEATHER CONDITION ON SCREEN 2-->
+    <string name="pressure">pressure</string>
+    <string name="humidity">humidity</string>
+    <string name="uvRisk">uv risk</string>
+    <string name="visibility">visibility</string>
+    <string name="windDirection">wind direction</string>
+    <string name="windSpeed">wind speed</string>
+
+</resources>
